@@ -1,4 +1,4 @@
-#based on number given print an assending, then decending star pattern
+#based on number given print an ascending, then descending star pattern
 
 user_num = int(input("How any stars would you like in largest row?\n:"))
 
@@ -11,11 +11,11 @@ for i in rows:
     star_increase = i
     star_decrease = int(rows[-1]+1)
 
-#logic to print the increaseing pattern
+#logic to print the increasing pattern
     if star_increase <= user_num:
         print("*" * i)
 
-#logic to pring decreasing pattern
+#logic to print decreasing pattern
     else:
         print((star_decrease - i) * "*")
 print("End of program")
